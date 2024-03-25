@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Quem Somos</title>
+    <style>
+        h1 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: #2f519b;
+            margin-top: 20px;
+            margin-left: 40px;
+            text-align: center;
+        }
+        p {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: inherit;
+            font-size: 16px;
+            font-weight: bolder;
+            text-align: justify;
+            letter-spacing: 0.2px;
+            margin-top: 15px;
+            padding-top: 10px;
+            text-indent: 20px;
+
+        }
+        h2 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #2f519b;
+        }
+        #lista {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            list-style-type: none;
+            text-indent: -1em;
+            padding-left: 1em;
+            margin-left: 1.5em
+        }
+        
+        #catral-subtitulo {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 30px;
+            text-align: center;
+        }
+        .aviso {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: #ffffcc;
+            padding: 2px;
+            border-radius: 5px;
+        }
+
+        footer p {
+            width: 100%;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            padding: 4px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 12px;
+            margin-top: auto;
+            position: absolute;
+        }
+        .menu-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+          }
+          
+          .menu-btn {
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+            padding: 10px;
+          }
+          
+          .btn-line {
+            width: 25px;
+            height: 3px;
+            background-color: #333;
+            margin: 3px 0;
+          }
+          
+          .menu {
+            display: none;
+            position: absolute;
+            top: 40px; /* Ajuste conforme necessário */
+            left: 0;
+            width: 200px;
+            background-color: #f4f4f4;
+          }
+          
+          .menu.active {
+            display: block;
+          }
+          
+          .menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+          }
+          
+          .menu ul li {
+            padding: 15px;
+            border-bottom: 1px solid #ccc;
+          }
+          
+          .menu ul li a {
+            text-decoration: none;
+            color: #333;
+          }
+          
+          .menu ul li:hover {
+            background-color: #ddd;
+          }
+
+ 
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <div class="menu-btn">
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
+        </div>
+        <nav class="menu">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./Sobre.html">Quem Somos</a></li>
+            <li><a href="./lojas.html">Nossas Lojas</a></li>
+            <li><a href="#">É Seguro Comprar?</a></li>
+          </ul>
+        </nav>
+      </div>
+    <h1>
+        SEGURANÇA
+    </h1>
+  
+<h2>É seguro comprar pelo site da Catral?</h2>
+<p>A proteção e sigilo de sua compra é nossa prioridade. Por esta razão, utilizamos em nosso site uma tecnologia avançada de segurança certificada pela DigiCert. empresa reconhecida internacionalmente no segmento de certificações digitais. Todo o tráfego de dados é feito com informações criptografadas. Você pode verificar se sua transação está sendo feita em modo de segurança através da URL (endereço) da página. Quando o sistema de segurança é iniciado, aparecerá no endereço do site "https" ao invés de somente "http", o que significa que você está se comunicando com um site que possui um sistema de segurança eficiente e que ele está ativo (isto é visível apenas no sistema SSL). Além disso, em determinados browsers, o ícone do cadeado fechado, no canto superior da tela, indica absoluta segurança durante a transmissão de dados em sua compra. Para sua segurança, se houver qualquer divergência de informações cadastrais e de pagamento, entraremos em contato para confirmar os dados antes de aprovar o pedido. A Catral jamais fornece dados cadastrais de seus clientes a terceiros.</p>
+        
+<h2>Os e-mails que recebo são realmente da Catral?</h2>
+<p>A Catral envia e-mails promocionais periodicamente somente a clientes que autorizem o envio. Além disso, o cliente sempre receberá e-mails automáticos após efetuar compras no site, de forma que possa acompanhar o andamento do pedido.</p>
+<div class="aviso">
+    <ul class="aviso">ATENÇÃO</ul>
+    A Catral não envia e-mails com arquivos executáveis ou links para downloads. Se você receber alguma mensagem com essas características, não abra o anexo ou o link e encaminhe o e-mail para <a href="mailto:sac@catral.com.br">sac@catral.com.br</a> para que as medidas cabíveis sejam tomadas.
+</div>
+        
+<h2>Disponibilizamos abaixo nossos dados cadastrais:</h2>
+
+<li id="lista">Razão Social: Catral Refrigeração e Eletrodomésticos Ltda</li>
+<li id="lista">CNPJ: 02.375.921/0001-64</li>
+<li id="lista">Inscrição Estadual: 10.025.007-6</li>
+
+<footer>
+    <p>@ 2024 Website Catral. Todos os direitos reservados.</p>
+</footer>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const menu = document.querySelector('.menu');
+        
+        menuBtn.addEventListener('click', () => {
+          menu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

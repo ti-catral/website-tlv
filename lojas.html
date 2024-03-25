@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Quem Somos</title>
+    <style>
+        h1 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: #2f519b;
+            margin-top: 20px;
+            margin-left: 40px;
+            text-align: center;
+        }
+        p {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: inherit;
+            font-size: 16px;
+            font-weight: bolder;
+            text-align: justify;
+            letter-spacing: 0.2px;
+            margin-top: 15px;
+            padding-top: 10px;
+            text-indent: 20px;
+
+
+        }
+        h2 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #2f519b;
+            text-indent: 20px;
+        }
+        #lista {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            list-style-type: none;
+            text-indent: -1em;
+            padding-left: 1em;
+            margin-left: 1.5em
+        }
+        
+        #lista:before {
+            content: "➤"; /* Adiciona uma seta como marcador */
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        
+        li:before {
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        h3 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 16px;
+        }
+        #catral-subtitulo {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 30px;
+            text-align: center;
+        }
+        footer p {
+          width: 100%;
+          background-color: black;
+          color: #fff;
+          text-align: center;
+          padding: 4px;
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+          font-size: 12px;
+          margin-top: auto;
+          position: absolute;
+      }
+        .menu-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+          }
+          
+          .menu-btn {
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+            padding: 10px;
+          }
+          
+          .btn-line {
+            width: 25px;
+            height: 3px;
+            background-color: #333;
+            margin: 3px 0;
+          }
+          
+          .menu {
+            display: none;
+            position: absolute;
+            top: 40px; /* Ajuste conforme necessário */
+            left: 0;
+            width: 200px;
+            background-color: #f4f4f4;
+          }
+          
+          .menu.active {
+            display: block;
+          }
+          
+          .menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+          }
+          
+          .menu ul li {
+            padding: 15px;
+            border-bottom: 1px solid #ccc;
+          }
+          
+          .menu ul li a {
+            text-decoration: none;
+            color: #333;
+          }
+          
+          .menu ul li:hover {
+            background-color: #ddd;
+          }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <div class="menu-btn">
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
+        </div>
+        <nav class="menu">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./Sobre.html">Quem Somos</a></li>
+            <li><a href="./lojas.html">Nossas Lojas</a></li>
+            <li><a href="./seguranca.html">É Seguro Comprar?</a></li>
+          </ul>
+        </nav>
+      </div>
+    <h1>
+        NOSSAS LOJAS
+    </h1>
+<p>Precisando encontrar alguma de nossas Lojas? Veja abaixo nossos endereços:</p>
+  
+<h2>Goiânia</h2>
+
+<ul>
+    <li>Rua 246 n° 450 - Setor Coimbra</li>
+    <li>CEP: 74535-170</li>
+    <li>Telefone: (62) 4008-7000</li>
+</ul>
+        
+<h2>Aparecida de Goiânia</h2>
+<ul>
+    <li>Av. Rio Verde nº 3098 - Vila Rosa</li>
+    <li>CEP: 74935-851</li>
+    <li>Telefone: (62) 3611-3388</li>
+</ul>
+        
+<h2>Rio Verde</h2>
+
+    <ul>
+        <li>Av. Presidente Vargas nº 2300, esquina com Av. João Belo - Jardim Goiás</li>
+        <li>CEP: 75903-290</li>
+        <li>Telefone: (64) 3211-7000</li>
+    </ul>
+
+
+    <h1 id="catral-subtitulo">Catral - Aqui você encontra!</h1>
+
+    <footer>
+      <p>@ 2024 Website Catral. Todos os direitos reservados.</p>
+  </footer>
+
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const menu = document.querySelector('.menu');
+        
+        menuBtn.addEventListener('click', () => {
+          menu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
